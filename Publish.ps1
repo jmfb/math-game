@@ -18,6 +18,10 @@ try {
 		exit $lastexitcode
 	}
 
+	$version = (Get-Date).ToString("y.Mdd.Hmm.s")
+	Write-Host "[$(Get-Date)] New version: $version"
+	echo $version | Set-Content ./build/version.json
+
 	& aws s3 sync --delete ./build s3://math.buysse.link
 	if ($lastexitcode -ne 0) {
 		exit $lastexitcode

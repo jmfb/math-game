@@ -1,0 +1,17 @@
+.top-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.5rem;
+}
+
+.operator {
+	margin-right: 0.5rem;
+}
+
+.arguments {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
