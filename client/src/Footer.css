@@ -1,0 +1,12 @@
+.footer {
+	font-size: small;
+	display: flex;
+	flex-direction: row;
+	padding-top: 1rem;
+	border-top: 1px solid #333;
+}
+
+.copyright {
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,22 @@
+.root {
+	display: flex;
+	flex-direction: row;
+}
+
+.layout {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1920px;
+}
+
+@media screen and (max-width: 1279px) {
+	.layout {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1919px) {
+	.layout {
+		width: 1280px;
+	}
+}
