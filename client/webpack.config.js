@@ -115,6 +115,9 @@ module.exports = {
 			chunks: 'all'
 		}
 	},
+	performance: {
+		hints: false
+	},
 	devServer: {
 		static: {
 			directory: path.join(__dirname, './build')
