@@ -1,0 +1,24 @@
+.game-over {
+	text-align: center;
+	font-size: xxx-large;
+}
+
+.description {
+	text-align: center;
+	font-size: x-large;
+}
+
+.actions {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.play-again {
+	margin-left: auto;
+}
+
+.return {
+	margin-left: 1rem;
+	margin-right: auto;
+}

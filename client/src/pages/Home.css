@@ -1,0 +1,10 @@
+.title {
+	text-align: center;
+	font-size: xxx-large;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

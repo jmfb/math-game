@@ -1,0 +1,43 @@
+.correct {
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: xx-large;
+	background-color: white;
+	animation-name: correct-animation;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+}
+
+.wrong {
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: xx-large;
+	background-color: white;
+	animation-name: wrong-animation;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes correct-animation {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: green;
+	}
+	100 {
+		background-color: white;
+	}
+}
+
+@keyframes wrong-animation {
+	0% {
+		background-color: white;
+	}
+	50% {
+		background-color: red;
+	}
+	100 {
+		background-color: white;
+	}
+}

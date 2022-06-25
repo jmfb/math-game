@@ -1,3 +1,10 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: xxx-large;
+}
+
 .top-box {
 	display: flex;
 	flex-direction: row;
@@ -14,4 +21,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+}
+
+.input {
+	border: 1px solid rgba(128 128 128 / 40%);
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	margin-top: 0.5rem;
+	text-align: right;
+	font-size: xxx-large;
+	width: 6rem;
+	margin-right: -2rem;
 }

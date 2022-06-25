@@ -1,0 +1,44 @@
+.root {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.progress {
+	font-size: xx-large;
+}
+
+.correct {
+	margin-left: auto;
+	background-color: lightgreen;
+	border: 2px solid green;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 10rem;
+	padding: 0.5rem;
+	box-shadow: 4px 4px rgba(0 255 0 / 20%);
+}
+
+.wrong {
+	margin-left: 2rem;
+	background-color: pink;
+	border: 2px solid red;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 10rem;
+	padding: 0.5rem;
+	box-shadow: 4px 4px rgba(255 0 0 / 20%);
+}
+
+.number {
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+.label {
+	font-size: small;
+}
