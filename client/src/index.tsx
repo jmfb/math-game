@@ -1,9 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-const AsyncRoot = React.lazy(
-	() => import(/* webpackChunkName: 'Root' */ './Root')
-);
+const AsyncApplication = React.lazy(() => import('./Application'));
 
 function main() {
 	const rootElement = document.getElementById('root');
@@ -11,7 +9,7 @@ function main() {
 		throw new Error('Missing root DOM element.');
 	}
 
-	createRoot(rootElement).render(<AsyncRoot />);
+	createRoot(rootElement).render(<AsyncApplication />);
 }
 
 main();

@@ -21,6 +21,7 @@
 		"@babel/preset-typescript": "^7.17.12",
 		"@types/react": "^18.0.14",
 		"@types/react-dom": "^18.0.5",
+		"@types/react-router-dom": "^5.3.3",
 		"@typescript-eslint/eslint-plugin": "^5.28.0",
 		"@typescript-eslint/parser": "^5.28.0",
 		"autoprefixer": "^10.4.7",
@@ -48,6 +49,7 @@
 	},
 	"dependencies": {
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.3.0"
 	}
 }
