@@ -8,3 +8,7 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.links > * {
+	margin-bottom: 1rem;
+}

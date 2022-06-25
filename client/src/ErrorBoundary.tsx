@@ -30,10 +30,7 @@ export class ErrorBoundary extends Component<
 		const { error } = this.state;
 		if (error) {
 			return (
-				<ErrorView
-					{...{ error }}
-					onDismiss={this.handleDismissed}
-				/>
+				<ErrorView {...{ error }} onDismiss={this.handleDismissed} />
 			);
 		}
 

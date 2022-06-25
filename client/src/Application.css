@@ -1,6 +1,10 @@
 body {
 	margin: 0;
-	font-family: cursive;
+	font-family: 'Comic Neue', sans-serif;
+}
+
+input {
+	font-family: 'Comic Neue', sans-serif;
 }
 
 .main {

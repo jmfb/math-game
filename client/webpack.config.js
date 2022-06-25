@@ -89,6 +89,7 @@ module.exports = {
 <html lang="en">
 	<head>
 		${tags.headTags}
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Neue">
 	</head>
 	<body>
 		<div id="root" data-bundle-version="${version}"></div>
