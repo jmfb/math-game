@@ -6,7 +6,7 @@
 }
 
 .progress {
-	font-size: xx-large;
+	font-size: 2rem;
 }
 
 .correct {
@@ -36,7 +36,7 @@
 }
 
 .number {
-	font-size: xx-large;
+	font-size: 2rem;
 	font-weight: bold;
 }
 

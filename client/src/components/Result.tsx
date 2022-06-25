@@ -15,8 +15,13 @@ export function Result({ result, solution, onTimeout }: IResultProps) {
 	return isCorrect ? (
 		<div className={styles.correct}>Correct!</div>
 	) : (
-		<div className={styles.wrong}>
-			Wrong. The correct answer is {solution}.
-		</div>
+		<>
+			<div className={styles.wrong}>
+				Wrong. The correct answer is {solution}.
+			</div>
+			<div className={styles['wrong-small']}>
+				Wrong. Correct: {solution}
+			</div>
+		</>
 	);
 }

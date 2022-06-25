@@ -17,7 +17,7 @@ export function Progress({
 	return (
 		<div className={styles.root}>
 			<div className={styles.progress}>
-				Problem {problemNumber} of {totalProblems}
+				Problem {problemNumber}&nbsp;of&nbsp;{totalProblems}
 			</div>
 			<div className={styles.correct}>
 				<div className={styles.number}>{correct}</div>
