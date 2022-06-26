@@ -1,0 +1,21 @@
+.info {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.label {
+	font-weight: bold;
+}
+
+.version {
+	margin-left: 1rem;
+	font-family: monospace;
+}
+
+.loading {
+	width: 3rem;
+	height: 1rem;
+	margin-left: 1rem;
+}

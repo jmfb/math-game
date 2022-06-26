@@ -11,7 +11,7 @@ const webpack = require('webpack');
 const fs = require('fs');
 
 const treatWarningsAsErrors = !process.argv.includes('--watch');
-const version = fs.readFileSync('./src/version.json', 'utf8').trim();
+const version = JSON.parse(fs.readFileSync('./src/version.json', 'utf8'));
 
 module.exports = {
 	mode: 'production',

@@ -18,7 +18,7 @@ try {
 		exit $lastexitcode
 	}
 
-	$version = (Get-Date).ToString("y.Mdd.Hmm.s")
+	$version = '"' + (Get-Date).ToString("y.Mdd.Hmm.s") + '"'
 	Write-Host "[$(Get-Date)] New version: $version"
 	echo $version | Set-Content ./build/version.json
 

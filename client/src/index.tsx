@@ -1,5 +1,7 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
+import { createStore } from '~/redux';
 
 const AsyncApplication = React.lazy(() => import('./Application'));
 
@@ -9,7 +11,14 @@ function main() {
 		throw new Error('Missing root DOM element.');
 	}
 
-	createRoot(rootElement).render(<AsyncApplication />);
+	const store = createStore();
+	const rootComponent = (
+		<Provider {...{ store }}>
+			<AsyncApplication />
+		</Provider>
+	);
+
+	createRoot(rootElement).render(rootComponent);
 }
 
 main();
