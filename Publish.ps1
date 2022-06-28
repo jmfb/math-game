@@ -2,7 +2,13 @@ $ErrorActionPreference = "Stop"
 
 try {
 	Write-Host "[$(Get-Date)] Publishing Website"
+
 	Push-Location client
+
+	$version = '"' + (Get-Date).ToString("y.Mdd.Hmm.s") + '"'
+	Write-Host "[$(Get-Date)] New version: $version"
+	echo $version | Set-Content ./src/version.json
+
 	& yarn install
 	if ($lastexitcode -ne 0) {
 		exit $lastexitcode
@@ -17,10 +23,6 @@ try {
 	if ($lastexitcode -ne 0) {
 		exit $lastexitcode
 	}
-
-	$version = '"' + (Get-Date).ToString("y.Mdd.Hmm.s") + '"'
-	Write-Host "[$(Get-Date)] New version: $version"
-	echo $version | Set-Content ./build/version.json
 
 	& aws s3 sync --delete ./build s3://math.buysse.link
 	if ($lastexitcode -ne 0) {
